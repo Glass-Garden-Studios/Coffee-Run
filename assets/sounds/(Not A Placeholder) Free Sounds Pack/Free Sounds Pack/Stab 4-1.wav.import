@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://brmfb4dd26250"
+path="res://.godot/imported/Stab 4-1.wav-859ac3fa9a47687f2d1a385247e1e625.sample"
+
+[deps]
+
+source_file="res://assets/sounds/(Not A Placeholder) Free Sounds Pack/Free Sounds Pack/Stab 4-1.wav"
+dest_files=["res://.godot/imported/Stab 4-1.wav-859ac3fa9a47687f2d1a385247e1e625.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

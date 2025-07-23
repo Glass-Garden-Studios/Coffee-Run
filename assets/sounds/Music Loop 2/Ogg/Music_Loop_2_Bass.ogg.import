@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://jnh2u5jnkep5"
+path="res://.godot/imported/Music_Loop_2_Bass.ogg-d7ab144ad6a2bb11c941b4a97b3196de.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Music Loop 2/Ogg/Music_Loop_2_Bass.ogg"
+dest_files=["res://.godot/imported/Music_Loop_2_Bass.ogg-d7ab144ad6a2bb11c941b4a97b3196de.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

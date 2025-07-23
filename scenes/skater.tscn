@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://2v2omytemvqv"]
+
+[ext_resource type="Script" uid="uid://qown8fl5h3ed" path="res://scripts/skater.gd" id="1_3xg2h"]
+[ext_resource type="PackedScene" uid="uid://4ktjdclp2pyt" path="res://scenes/kill_floor.tscn" id="1_phvop"]
+[ext_resource type="Texture2D" uid="uid://ceyo2mco8lvga" path="res://assets/textues/Free City Enemies Pixel Art/3/Walk.png" id="2_5fvbo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rm1be"]
+atlas = ExtResource("2_5fvbo")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rulib"]
+atlas = ExtResource("2_5fvbo")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00236"]
+atlas = ExtResource("2_5fvbo")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqmck"]
+atlas = ExtResource("2_5fvbo")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kku3o"]
+atlas = ExtResource("2_5fvbo")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5lbl"]
+atlas = ExtResource("2_5fvbo")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_brkyd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rm1be")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rulib")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00236")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqmck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kku3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5lbl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_acp0u"]
+size = Vector2(21, 35)
+
+[node name="skater" type="Node2D"]
+script = ExtResource("1_3xg2h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_brkyd")
+autoplay = "default"
+frame_progress = 0.0340054
+
+[node name="kill_floor" parent="." instance=ExtResource("1_phvop")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill_floor"]
+position = Vector2(-9.5, 5.5)
+shape = SubResource("RectangleShape2D_acp0u")
+
+[node name="RayCast2D_Right" type="RayCast2D" parent="."]
+position = Vector2(-4, 20)
+target_position = Vector2(11, 0)
+
+[node name="RayCast_left" type="RayCast2D" parent="."]
+position = Vector2(0, 20)
+target_position = Vector2(-26, 0)

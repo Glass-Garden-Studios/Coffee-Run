@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dk4on40wqyjpx"
+path="res://.godot/imported/Interface 1-1.wav-aaaea611f5f2eaab665073f09beb7994.sample"
+
+[deps]
+
+source_file="res://assets/sounds/(Not A Placeholder) Free Sounds Pack/Free Sounds Pack/Interface 1-1.wav"
+dest_files=["res://.godot/imported/Interface 1-1.wav-aaaea611f5f2eaab665073f09beb7994.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bedoco5rkhbx1"]
+
+[ext_resource type="Texture2D" uid="uid://w0rapjkpqp6v" path="res://assets/textues/platform.png" id="1_amuwa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p73pu"]
+size = Vector2(45, 30)
+
+[node name="platform_a" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_amuwa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_p73pu")
+one_way_collision = true

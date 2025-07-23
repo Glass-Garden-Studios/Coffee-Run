@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://y4g5igennc1n"
+path="res://.godot/imported/Music_Loop_2_Bass.wav-c9eef8db7b87d0be8238b55aa6c5c250.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Music Loop 2/Wav/Music_Loop_2_Bass.wav"
+dest_files=["res://.godot/imported/Music_Loop_2_Bass.wav-c9eef8db7b87d0be8238b55aa6c5c250.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

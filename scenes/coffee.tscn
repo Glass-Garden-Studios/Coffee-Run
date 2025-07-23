@@ -1,0 +1,128 @@
+[gd_scene load_steps=8 format=3 uid="uid://de5jw5vg01png"]
+
+[ext_resource type="Script" uid="uid://w742neqh3odk" path="res://scripts/coffee.gd" id="1_fe1ek"]
+[ext_resource type="Texture2D" uid="uid://cpkvxn7og3whh" path="res://assets/textues/coffeee.png" id="1_tlbmd"]
+[ext_resource type="AudioStream" uid="uid://cjnhu8fpb5bbv" path="res://assets/sounds/(Not A Placeholder) Free Sounds Pack/Free Sounds Pack/Bag Handle 1-5.wav" id="3_vgd82"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fe1ek"]
+size = Vector2(23.2461, 25.6834)
+
+[sub_resource type="Animation" id="Animation_1oinl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_ovig0"]
+resource_name = "pickup"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5yp7a"]
+_data = {
+&"RESET": SubResource("Animation_1oinl"),
+&"pickup": SubResource("Animation_ovig0")
+}
+
+[node name="coffee" type="Area2D"]
+script = ExtResource("1_fe1ek")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 0.47822
+texture = ExtResource("1_tlbmd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.26436, 2.5454)
+rotation = 0.47822
+shape = SubResource("RectangleShape2D_fe1ek")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_vgd82")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_5yp7a")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

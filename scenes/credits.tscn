@@ -1,0 +1,94 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxur7h7cl5rnp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yeqti"]
+font_size = 40
+
+[node name="credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_vertical_guides_ = [6.0]
+metadata/_edit_use_anchors_ = true
+
+[node name="textures_characters" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.035
+offset_left = 6.0
+offset_top = 43.0
+offset_right = 134.68
+offset_bottom = 43.32
+text = "Textures + Characters"
+
+[node name="TextEdit" type="TextEdit" parent="textures_characters"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 21.0
+offset_right = 1132.0
+offset_bottom = 356.0
+text = "Ansimuz - Legacy Collection, Industrial Parallax Background
+Not Jam - Font Pack
+Rotting Pixels - Nature Platformer Tileset, Four Seasons Platformer Tileset, Castle Platformer Tileset, Sci-Fi Platformer Tileset
+Atomic Realm - Industrial Tileset
+Free Game Assets - Free City Enemies
+Otterisk - Hana Caraka Base Character
+s3bz - Pixel Art Phone
+HelloRuminn - Neko Office Asset Pack, Neko Cafe Asset Pack
+Porfiriall737 - Buildings of the future
+Katame13 - Coffee 8x8 and 16x16
+Yanin - Specialty Coffee & Pastries Asset Pack
+ToffeeCraft - Cozy and Warm UI pacl"
+
+[node name="sounds" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.035
+offset_left = 4.0
+offset_top = 411.0
+offset_right = 35.68
+offset_bottom = 411.32
+text = "Sounds"
+
+[node name="TextEdit" type="TextEdit" parent="sounds"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 26.0
+offset_right = 1120.0
+offset_bottom = 159.0
+text = "Brackeys - Brackeys Platformer Bundle
+Place Holder Assets - 50 Free Game Sounds Pack
+beatscribe - Free UGE Music Asset Pack  
+Hunter Audio Production - Retro 8bit SFX and Music Pack"
+
+[node name="play_testers" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.035
+offset_left = 4.0
+offset_top = 573.0
+offset_right = 56.68
+offset_bottom = 573.32
+text = "Play Testers"
+
+[node name="TextEdit" type="TextEdit" parent="play_testers"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 21.0
+offset_right = 398.0
+offset_bottom = 71.0
+text = "Cherrystix "
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 5.0
+offset_right = 702.0
+offset_bottom = 60.0
+text = "Thanks For Playing"
+label_settings = SubResource("LabelSettings_yeqti")

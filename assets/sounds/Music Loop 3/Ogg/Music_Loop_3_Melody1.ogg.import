@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://sosqybnht7mm"
+path="res://.godot/imported/Music_Loop_3_Melody1.ogg-8bc501918cc8b893f88a1cda0ec9533f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Music Loop 3/Ogg/Music_Loop_3_Melody1.ogg"
+dest_files=["res://.godot/imported/Music_Loop_3_Melody1.ogg-8bc501918cc8b893f88a1cda0ec9533f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

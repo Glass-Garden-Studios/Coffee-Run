@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dy6rfokrx8ywi"
+path="res://.godot/imported/Music_Loop_5_ChorusLayer.ogg-78eb11aa2c15e73cf248631438329aba.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Music Loop 5/Ogg/Music_Loop_5_ChorusLayer.ogg"
+dest_files=["res://.godot/imported/Music_Loop_5_ChorusLayer.ogg-78eb11aa2c15e73cf248631438329aba.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,59 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhg8t6baus7uh"]
+
+[ext_resource type="Script" uid="uid://bdbgmhtbgcnb3" path="res://scripts/barista.gd" id="1_qy80q"]
+[ext_resource type="Texture2D" uid="uid://btcwsgb10cu1u" path="res://assets/textues/Neko Cafe Asset Pack/Characters/cat-waiter-front.png" id="1_y7kvb"]
+[ext_resource type="PackedScene" uid="uid://bd3q73n5pw0n" path="res://scenes/interact_area.tscn" id="2_rio5o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rio5o"]
+atlas = ExtResource("1_y7kvb")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qy80q"]
+atlas = ExtResource("1_y7kvb")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6lnga"]
+atlas = ExtResource("1_y7kvb")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3rcr3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rio5o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qy80q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6lnga")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xwpi6"]
+radius = 6.0
+height = 18.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qy80q"]
+height = 74.0
+
+[node name="barista" type="AnimatableBody2D"]
+script = ExtResource("1_qy80q")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3rcr3")
+autoplay = "default"
+frame_progress = 0.842301
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_xwpi6")
+
+[node name="interact_area" parent="." instance=ExtResource("2_rio5o")]
+interact_name = "Talk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interact_area"]
+shape = SubResource("CapsuleShape2D_qy80q")

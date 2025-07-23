@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bge5a2fmb86wq"
+path="res://.godot/imported/Ambient Water Stream Calm 3.wav-fe633c6e4472581f6b29e9b9812e8dde.sample"
+
+[deps]
+
+source_file="res://assets/sounds/(Not A Placeholder) Free Sounds Pack/Free Sounds Pack/Ambient Water Stream Calm 3.wav"
+dest_files=["res://.godot/imported/Ambient Water Stream Calm 3.wav-fe633c6e4472581f6b29e9b9812e8dde.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

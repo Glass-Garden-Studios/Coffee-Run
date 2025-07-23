@@ -1,0 +1,12 @@
+player: huff hufff
+boss: YOU
+boss: COFFEE
+boss: NOW
+- Give the coffee
+	boss: You some how picked up {cup} cups of coffee and still didn't get mine?
+	boss: How hard is it to get a 204 pumps of cinnamon syrup, 52 pumps of hazelnut, 23 pumps of classic syrup, 69 pumps of sugar free caramel syrup, 15 pumps of sugar free vanilla, 40 pumps of vanilla, 38 pumps of caramel syrup, 75 pumps of almond syrup, 88 pumps of sugar free hazelnut syrup, 1 pump of peppermint syrup.
+boss: You know what? I'm docking your pay
+- pay?
+	boss: You're an intern? Well then you're fired
+	boss: Get out
+[signal arg="credits"]

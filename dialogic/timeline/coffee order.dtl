@@ -1,0 +1,56 @@
+join barista/barista center
+barista: Number 27?
+join player rightmost
+- Yes
+	player: Yep
+- (nod)
+barista/barista: Here's your order friend!
+- Thanks
+	barista/barista: No problem, enjoy your day!
+- (silence)
+	barista/barista: Um, ok.
+	barista/barista: Enjoy your day I guess.
+leave barista/barista
+leave player
+join phone rightmost
+phone: ring, ring
+- Hello
+	join player leftmost
+	player: Hello?
+	phone: Hey, bud.
+	phone: You might want to hurry up on that coffee run
+	phone: The boss is on his way back
+	phone: click
+	leave phone
+	player: OH NO!
+	player: I  GOTTA HURRY
+	[signal arg="start"]
+- Ignore
+	phone: ring, ring, ring
+	- Ignore
+		phone: ring, ring, ring. ring
+		- Ignore
+			leave phone
+			It went to voicemail
+		- Hello
+			join player leftmost
+			player: Hello?
+			phone: Hey, bud.
+			phone: You might want to hurry up on that coffee run
+			phone: The boss is on his way back
+			phone: click
+			leave phone
+			player: OH NO!
+			player: I  GOTTA HURRY
+			[signal arg="start"]
+	- Hello
+		join player leftmost
+		player: Hello?
+		phone: Hey, bud.
+		phone: You might want to hurry up on that coffee run
+		phone: The boss is on his way back
+		phone: click
+		leave phone
+		player: OH NO!
+		player: I  GOTTA HURRY
+		[signal arg="start"]
